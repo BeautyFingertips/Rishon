@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Collection</title>
+    <style>
+        body {
+            background-color: #393939;
+            background-image: url("Download1 (1).jpg");
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #312d2d;
+            position: fixed;
+            width: 100%;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            text-align: center;
+            padding: 20px;
+        }
+        .product-card1 {
+            border: 1px solid #666;
+            padding: 20px;
+            margin: 20px;
+            background-image: url("Download2.jpg");
+            color: #070707;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .product-card2 {
+            border: 1px solid #666;
+            padding: 20px;
+            margin: 20px;
+            background-image: url("download8.jpg");
+            color: #070707;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .product-card3 {
+            border: 1px solid #666;
+            padding: 20px;
+            margin: 20px;
+            background-image: url("download9.jpg");
+            color: #020202;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .product-card4 {
+            border: 1px solid #666;
+            padding: 20px;
+            margin: 20px;
+            background-image: url("download6.jpg");
+            color: #070707;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .product-card5 {
+            border: 1px solid #666;
+            padding: 20px;
+            margin: 20px;
+            background-image: url("download10.jpg");
+            color: #060606;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .product-card6 {
+            border: 1px solid #666;
+            padding: 20px;
+            margin: 20px;
+            background-image: url("download11.jpg");
+            color: #060606;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .product-card7 {
+            border: 1px solid #666;
+            padding: 20px;
+            margin: 20px;
+            background-image: url("download12.jpg");
+            color: #040404;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .product-card8 {
+            border: 1px solid #666;
+            padding: 20px;
+            margin: 20px;
+            background-image: url("download13.jpg");
+            color: #0a0a0a;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .product-card9 {
+            border: 1px solid #666;
+            padding: 20px;
+            margin: 20px;
+            background-image: url("download14.jpg");
+            color: #080808;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .product-card10 {
+            border: 1px solid #666;
+            padding: 20px;
+            margin: 20px;
+            background-image: url("download15.jpg");
+            color: #010101;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .product-card:hover {
+            background-color: #444;
+        }
+        .dropdown-container{
+            margin-top: 20px;
+            text-align: center;
+        }
+        .dropdown-container2 {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .dropdown-container3 {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .dropdown-container4 {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .dropdown-container5 {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .dropdown-container6 {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .dropdown-container7 {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .dropdown-container8 {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .dropdown-container9 {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .dropdown-container10 {
+            margin-top: 20px;
+            text-align: center;
+        }
+        select {
+            background-color: rgba(255, 255, 255, 0.484); /* Adjust the alpha value for transparency */
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .cart-icon {
+            font-size: 24px;
+            margin-right: 10%;
+            align-content: flex-end;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Products With Us</h1>
+    </header>
+
+    <section>
+        
+        <br><br><br><br><br>
+
+     <card id="card655">
+        <div class="product-card2">
+            <h2>Skin Care</h2>
+            <div class="dropdown-container2">
+                <select id="skincare" onchange="card655()">
+                    <option value="option1">All</option>
+                    <option value="option2">Moisturisers</option>
+                    <option value="option3">Serum & Treatment</option>
+                    <option value="option4">Eye & Lip Care</option>
+                    <option value="option5">Cleansers</option>
+                    <option value="option6">Mask</option>
+                    <option value="option7">Sun Care</option>
+                    <option value="option8">Skin Care Tool</option>
+                    <option value="option9">Skin Care Set</option>
+                    <option value="option10">Toner, Essences & Mist</option>
+                </select>
+            </div>    
+        </div>
+     </card>
+        <div class="product-card3">
+            <h2>Make Up</h2>
+            <div class="dropdown-container3">
+                <select id="makeup" onchange="card656()">
+                    <option value="option1">All</option>
+                    <option value="option2">Face</option>
+                    <option value="option3">Eyes</option>
+                    <option value="option4">Lips</option>
+                    <option value="option5">Nails</option>
+                    <option value="option6">Make-Up Tools</option>
+                </select>
+            </div>    
+        </div> 
+        <div class="product-card4">
+            <h2>Fragrance</h2>
+            <div class="dropdown-container4">
+                <select id="fragrance" onchange="card657()">
+                    <option value="option1">All</option>
+                    <option value="option2">Women</option>
+                    <option value="option3">Men</option>
+                    
+                    </select>
+            </div>    
+        </div>
+        <div class="product-card5">
+            <h2>Bath & Body</h2>
+            <div class="dropdown-container5">
+                <select id="bathandbody" onchange="card658()">
+                    <option value="option1">All</option>
+                    <option value="option2">Body Care</option>
+                    <option value="option3">Bath & Shower</option>
+                    <option value="option4">Bath & Body Tools</option>
+                    <option value="option5">Intimate Care</option>
+                    <option value="option6">Oral Care</option>
+                    <option value="Option7">Suncare</option>
+                    <option value="option8">Deodorants & Anti-Perspirants</option>
+                    
+                </select>
+            </div>    
+        </div>
+        <div class="product-card6">
+            <h2>Hair</h2>
+            <div class="dropdown-container6">
+                <select id="hair" onchange="card659()">
+                    <option value="option1">All</option>
+                    <option value="option2">Shampoo</option>
+                    <option value="option3">Conditioner</option>
+                    <option value="option4">Styling Products</option>
+                    <option value="option5">Treatments</option>
+                    <option value="option6">Hair Tools & Accessories</option>
+                    <option value="Option7">Hair Colour</option>
+                    
+                </select>
+            </div>    
+        </div>
+        <div class="product-card7">
+            <h2>Men</h2>
+            <div class="dropdown-container7">
+                <select id="men" onchange="card660()">
+                    <option id="option1" value="option1">All</option>
+                    <option value="option2">Skin Care</option>
+                    <option value="option3">Shaving & Grooming</option>
+                    <option value="option4">Body & Shower</option>
+                    <option value="option5">Hair</option>
+                    <option value="option6">Fragrance</option>
+                    <option value="option7">Deodorants & Anti-Perspirants</option>
+                    
+                </select>
+            </div>    
+        </div>
+        <div class="product-card8">
+            <h2>Essential Oils</h2>
+            <div class="dropdown-container8">
+                <select id="essentialoils" onchange="card661()">
+                    <option value="option1">All</option>
+                    <option value="option2">Essential Oil Blends</option>
+                    <option value="option3">Pulse Point Roll-Ons</option>
+                    <option value="option4">Supporting Products</option>
+                </select>
+            </div>    
+        </div>
+        <div class="product-card9">
+            <h2>Kids & Baby</h2>
+            <div class="dropdown-container9">
+                <select id="kidsandbaby" onchange="card662()">
+                    <option value="option1">All</option>
+                    <option value="option2">Kids</option>
+                    <option value="option3">Baby</option>
+                    
+                </select>
+            </div>    
+        </div>
+         
+        <!-- Add more product cards as needed -->
+    </section>
+
+    <button onclick="button2()" class="cart-icon">&#128722;</button>
+
+    <script>
+        function card655() {
+            var skincare = document.getElementById('skincare').value;
+
+            if(skincare == 'option1'){
+                window.location.href = 'skincare.html'
+            } else if (skincare == 'option2'){
+                window.location.href = 'moisture.html'
+            }else if (skincare == 'option3'){
+                window.location.href = 'serumandtreatment.html'
+            }else if (skincare == 'option4'){
+                window.location.href = 'eyeandlip.html'
+            }else if (skincare == 'option5'){
+                window.location.href = 'cleansers.html'
+            }else if (skincare == 'option6'){
+                window.location.href = 'mask.html'
+            }else if (skincare == 'option7'){
+                window.location.href = 'suncare.html'
+            }else if (skincare == 'option8'){
+                window.location.href = 'skincaretools.html'
+            }else if (skincare == 'option9'){
+                window.location.href = 'skincaresets.html'
+            }else{
+                window.location.href = 'toneressencesandmist.html'
+            }
+        }
+        function card656() {
+            var makeup = document.getElementById('makeup').value;
+
+            if (makeup == 'option1'){
+                window.location.href = 'makeup.html'
+            } else if (makeup == 'option2'){
+                window.location.href = 'face.html'
+            }else if (makeup == 'option3'){
+                window.location.href = 'eye.html'
+            }else if (makeup == 'option4'){
+                window.location.href = 'lips.html'
+            }else if (makeup == 'option5'){
+                window.location.href = 'nails.html'
+            }else{
+                window.location.href = 'makeuptools.html'
+            }
+        }
+        function card657() {
+            var fragrance = document.getElementById('fragrance').value;
+
+            if(fragrance == 'option1'){
+                window.location.href = 'fragrance.html'
+            } else if (fragrance == 'option2'){
+                window.location.href = 'women.html'
+            }else{
+                window.location.href = 'menfragnence.html'
+            }
+        }
+        function card658() {
+            var bathandbody = document.getElementById('bathandbody').value;
+
+            if(bathandbody == 'option1'){
+                window.location.href = 'bathandbody.html'
+            } else if (bathandbody == 'option2'){
+                window.location.href = 'bodycare.html'
+            }else if (bathandbody == 'option3'){
+                window.location.href = 'bathandshower.html'
+            }else if (bathandbody == 'option4'){
+                window.location.href = 'bathandbodytools.html'
+            }else if (bathandbody == 'option5'){
+                window.location.href = 'intimatecare.html'
+            }else if (bathandbody == 'option6'){
+                window.location.href = 'oralcare.html'
+            }else if (bathandbody == 'option7'){
+                window.location.href = 'suncare2.html'
+            }else{
+                window.location.href = 'deodorantsandantiperspirants.html'
+            }
+        }
+        function card659() {
+            var hair = document.getElementById('hair').value;
+
+            if(hair == 'option1'){
+                window.location.href = 'hair.html'
+            } else if (hair == 'option2'){
+                window.location.href = 'shampoo.html'
+            }else if (hair == 'option3'){
+                window.location.href = 'conditioner.html'
+            }else if (hair == 'option4'){
+                window.location.href = 'stylingproducts.html'
+            }else if (hair == 'option5'){
+                window.location.href = 'treatments.html'
+            }else if (hair == 'option6'){
+                window.location.href = 'hairtoolsandaccessories.html'
+            }else{
+                window.location.href = 'haircolour.html'
+            }
+        }
+        function card660() {
+            var men = document.getElementById('men').value;
+
+            if(men == 'option1'){
+                window.location.href = 'men.html'
+            } else if (men == 'option2'){
+                window.location.href = 'menskincare.html'
+            }else if (men == 'option3'){
+                window.location.href = 'shavingandgrooming.html'
+            }else if (men == 'option4'){
+                window.location.href = 'bodyandshower.html'
+            }else if (men == 'option5'){
+                window.location.href = 'hairmen.html'
+            }else if (men == 'option6'){
+                window.location.href = 'fragrancemens.html'
+            }else {
+                window.location.href = 'deodorantsandantiperspirantsmen.html'
+            }
+        }
+
+        function card661() {
+            var essentialoils = document.getElementById('essentialoils').value;
+
+            if(essentialoils == 'option1'){
+                window.location.href = 'essentialoils.html'
+            } else if (essentialoils == 'option2'){
+                window.location.href = 'essentialoilblends.html'
+            }else if (essentialoils == 'option3'){
+                window.location.href = 'pulsepointrollon.html'
+            }else{
+                window.location.href = 'supportingproducts.html'
+            }
+        }
+        function card662() {
+            var kidsandbaby = document.getElementById('kidsandbaby').value;
+
+            if(kidsandbaby == 'option1'){
+                window.location.href = 'kidsandbaby.html'
+            } else if (kidsandbaby == 'option2'){
+                window.location.href = 'kids.html'
+            }else{
+                window.location.href = 'baby.html'
+            }
+        }
+        function button2() {
+            window.location.href = 'cart.html'
+        }
+
+    </script>
+</body>
+</html>

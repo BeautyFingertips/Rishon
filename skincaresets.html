@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #393939;
+            background-image: url("Download1 (1).jpg");
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #312D2D;
+            position: fixed;
+            width: 100%;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            text-align: center;
+            padding: 20px;
+        }
+        /* Container for the cards */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start; /* Align cards to the left */
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Styling for each individual card */
+        .card {
+            width: 300px;
+            height: 400px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        /* Hover effect for cards */
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Styling for the content within the card */
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        /* Styling for the image within the card */
+        .card img {
+            width: 250px;
+            height: 120%; /* Adjusted height for the image */
+            object-fit: cover;
+            object-position: center;
+            border-bottom: 1px solid #0b0b0b; /* Added border between image and text */
+        }
+
+        /* Styling for the text within the card */
+        .card-text {
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        /* Optional: Add responsiveness */
+        @media (max-width: 600px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Skin Care: Skin Care SET</h1>
+    </header>
+
+
+   <section><br><br><br><br><br>
+
+    <!-- Container for the cards -->
+    <div class="card-container">
+        <!-- Card 1 with image at the top and text at the bottom -->
+        <div class="card" id="card395">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture10.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>NovAge Set</h2>
+                    <h4>Rs. 11,000</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card396">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture10.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Hydra Radiance Rich Set</h2>
+                    <h4>Rs. 5,744</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card397">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture10.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Hydra Radiance SET</h2>
+                    <h4>Rs. 5,744</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card398">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture11.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Even Out SET</h2>
+                    <h4>Rs. 6,894</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card399">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture4.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Glow Rise SET</h2>
+                    <h4>Rs. 5,994</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card400">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture5.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Radiance Facial Kit with Organic Milk, Honey and Turmeric</h2>
+                    <h4>Rs. 1,899</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card401">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture6.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Nourishing Facial Kit with Organic Guarana, Papaya & Pineapple</h2>
+                    <h4>Rs. 1,899</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card402">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture5.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Men SET</h2>
+                    <h4>Rs. 6,400</h4>
+                </div>
+            </div>
+         </div>
+        
+    </div>
+
+   </section>
+
+</body>
+</html>
