@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #393939;
+            background-image: url("Download1 (1).jpg");
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #312D2D;
+            position: fixed;
+            width: 100%;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            text-align: center;
+            padding: 20px;
+        }
+        /* Container for the cards */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start; /* Align cards to the left */
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Styling for each individual card */
+        .card {
+            width: 300px;
+            height: 400px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        /* Hover effect for cards */
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Styling for the content within the card */
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        /* Styling for the image within the card */
+        .card img {
+            width: 250px;
+            height: 120%; /* Adjusted height for the image */
+            object-fit: cover;
+            object-position: center;
+            border-bottom: 1px solid #0b0b0b; /* Added border between image and text */
+        }
+
+        /* Styling for the text within the card */
+        .card-text {
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        /* Optional: Add responsiveness */
+        @media (max-width: 600px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Make-Up: All</h1>
+    </header>
+
+
+   <section><br><br><br><br><br>
+
+    <!-- Container for the cards -->
+    <div class="card-container">
+        <!-- Card 1 with image at the top and text at the bottom -->
+        <div class="card" id="card152">
+            <div class="card-content">
+                <!-- Image at the top -->
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture1.png" alt="Card Background 1">
+                <!-- Text at the bottom -->
+                <div class="card-text">
+                    <h2>Passion Fruit Multi-Purpose Balm</h2>
+                    <h4>Rs. 399</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="card153">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture4.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Green Apple Fruit Multi-Purpose Balm</h2>
+                    <h4>Rs. 399</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card154">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture5.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Raspberry Fruit Multi-Purpose Balm</h2>
+                    <h4>Rs. 399</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card155">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture6.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Wonder Liner</h2>
+                    <h4>Rs. 699</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card156">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture7.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Divine Eyeshadow Palette</h2>
+                    <h4>Rs. 2,299</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card157">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture8.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Colour Stylist Super Pout Lipstick</h2>
+                    <h4>Rs. 799</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card158">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture9.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>OnColour Nail Polish</h2>
+                    <h4>Rs. 149</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card159">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture10.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>OnColour Nail Polish</h2>
+                    <h4>Rs. 149</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card160">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture11.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Serum Boost Primer</h2>
+                    <h4>Rs. 1,299</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card161">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture12.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Blackcurrant Multi-Purpose Balm</h2>
+                    <h4>Rs. 399</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card162">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture4.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Tremendous Mascara Waterproof</h2>
+                    <h4> Rs. 799</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card163">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture5.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Serum Infused Pearls</h2>
+                    <h4> Rs. 1,799</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card164">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture6.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Age Defying Serum Boost Foundation</h2>
+                    <h4>Rs. 1,799</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card165">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture7.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Tattoo Effect Brow Pen</h2>
+                    <h4>Rs. 899</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card166">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture8.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>OnColour Cream Lipstick</h2>
+                    <h4>Rs. 125</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card167">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture9.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>OnColour Cream Lipstick</h2>
+                    <h4>Rs. 125</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card168">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture10.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Kohl Eye Pencil</h2>
+                    <h4>Rs. 449</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card169">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture11.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Natural Multi-Purpose Balm</h2>
+                    <h4>Rs. 399</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card170">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture12.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>High Impact Eye Pencil</h2>
+                    <h4>Rs. 549</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card171">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture13.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Iconic Glide Eye Pencil</h2>
+                    <h4>Rs. 799</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card172">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture4.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Irresistible Touch High Shine Lipstick</h2>
+                    <h4> Rs. 799</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card173">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture5.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Colour Unlimited Ultra Fix Lipstick</h2>
+                    <h4> Rs. 999</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card174">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture6.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Colour Unlimited Matte Lipstick</h2>
+                    <h4>Rs. 799</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card175">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture7.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Lip Sensation Matte Velvet</h2>
+                    <h4>Rs. 799</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card176">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture8.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>OnColour Perfect Duo Eye Pencil</h2>
+                    <h4>Rs. 499</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card177">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture9.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Blush Brush</h2>
+                    <h4>Rs. 429</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card178">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture10.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Blending Brush</h2>
+                    <h4>Rs. 259</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card179">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture12.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Concealer Brush</h2>
+                    <h4>Rs. 279</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card180">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture13.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Contouring Brush</h2>
+                    <h4>Rs. 429</h4>
+                </div>
+            </div>
+           </div>
+        </div>
+        <div class="card" id="card181">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture4.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Dual Eyebrow Brush</h2>
+                    <h4> Rs. 209</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card182">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture5.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Eyelash Curler</h2>
+                    <h4> Rs. 279</h4>
+                </div>
+            </div>
+        </div>
+         <div class="card" id="card183">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture6.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Foundation Brush</h2>
+                    <h4>Rs. 429</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card184">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture7.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Lip Brush</h2>
+                    <h4>Rs. 339</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card185">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture8.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Colour Stylist Ultimate Lipstick</h2>
+                    <h4>Rs. 599</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card186">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture9.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Powder Brush</h2>
+                    <h4>Rs. 449</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card187">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture10.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Iconic Lipstick SPF 15</h2>
+                    <h4>Rs. 999</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card188">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture11.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Everlasting Sync Concealer</h2>
+                    <h4>Rs. 549</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card189">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture12.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>OnColour Matte Lipstick</h2>
+                    <h4>Rs. 125</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card190">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture13.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>CC Cream SPF 35</h2>
+                    <h4>Rs. 1,299</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card191">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture4.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>All-Over Make-Up Remover</h2>
+                    <h4> Rs. 449</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card192">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture5.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Make-Up Pro Loose Powder</h2>
+                    <h4> Rs. 1,099</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card193">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture6.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Browcara</h2>
+                    <h4>Rs. 799</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card194">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture7.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>OnColour Face Powder</h2>
+                    <h4>Rs. 249</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card195">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture8.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Make-Up Pro Primer Glow Enhancer</h2>
+                    <h4>Rs. 549</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card196">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture9.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Make-Up Pro Face Mist</h2>
+                    <h4>Rs. 699</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card197">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture10.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>5-in-1 Wonder Lash Mascara Waterproof</h2>
+                    <h4>Rs. 749</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card198">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture11.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Everlasting Pressed Powder</h2>
+                    <h4>Rs. 1,099</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card199">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture12.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Lip Spa Lip Balm</h2>
+                    <h4>Rs. 599</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card200">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture13.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Iconic Lip Elixir SPF 15</h2>
+                    <h4>Rs. 1,299</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card201">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture4.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Illuskin Aquaboost Foundation SPF 20</h2>
+                    <h4> Rs. 999</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card202">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture5.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Colour Stylist Ultimate Lip Liner</h2>
+                    <h4> Rs. 599</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card203">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture6.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Colour Unlimited Eye Shadow</h2>
+                    <h4>Rs. 849</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card204">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture7.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Eyeliner Stylo Waterproof</h2>
+                    <h4>Rs. 699</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card205">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture8.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>OnColour Matte Lipstick</h2>
+                    <h4>Rs. 125</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card206">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture9.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Everlasting Sync Foundation SPF 30</h2>
+                    <h4>Rs. 999</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card207">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture10.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Iconic Matte Lipstick SPF 15</h2>
+                    <h4>Rs. 1,199</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card208">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture11.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Lip Sensation Matte Mousse</h2>
+                    <h4>Rs. 849</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card209">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture12.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Long Wear Mineral Foundation SPF 15</h2>
+                    <h4>Rs. 1,599</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card210">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture13.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Iconic Lipstick SPF 15</h2>
+                    <h4>Rs. 999</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card211">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture13.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Kohl Eye Pencil</h2>
+                    <h4>Rs. 379</h4>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</section>
+
+</body>
+</html>
+
+

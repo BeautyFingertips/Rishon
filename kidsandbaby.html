@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #393939;
+            background-image: url("Download1 (1).jpg");
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #312D2D;
+            position: fixed;
+            width: 100%;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            text-align: center;
+            padding: 20px;
+        }
+        /* Container for the cards */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start; /* Align cards to the left */
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Styling for each individual card */
+        .card {
+            width: 300px;
+            height: 400px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        /* Hover effect for cards */
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Styling for the content within the card */
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        /* Styling for the image within the card */
+        .card img {
+            width: 250px;
+            height: 120%; /* Adjusted height for the image */
+            object-fit: cover;
+            object-position: center;
+            border-bottom: 1px solid #0b0b0b; /* Added border between image and text */
+        }
+
+        /* Styling for the text within the card */
+        .card-text {
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        /* Optional: Add responsiveness */
+        @media (max-width: 600px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Kids & Baby: All</h1>
+    </header>
+
+
+   <section><br><br><br><br><br>
+
+    <!-- Container for the cards -->
+    <div class="card-container">
+        <!-- Card 1 with image at the top and text at the bottom -->
+        <div class="card" id="card145" onclick="card145()">
+            <div class="card-content">
+                <!-- Image at the top -->
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture1.png" alt="Card Background 1">
+                <!-- Text at the bottom -->
+                <div class="card-text">
+                    <h2>Kids Body Lotion Cheerful Apple</h2>
+                    <h4>Rs. 549</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="card146" onclick="card146()">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture4.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Kids Fragrance Mist Playful Strawberry</h2>
+                    <h3>Rs. 549</h3>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card147" onclick="card147()">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture5.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Kids Gentle Strawberry Toothpaste</h2>
+                    <h3>Rs. 119</h3>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card148" onclick="card148()">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture6.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Kids Hair & Body Wash Playful Strawberry</h2>
+                    <h3>Rs. 449</h3>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card149" onclick="card149()">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture7.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Kids Hair & Body Wash Cheerful Apple</h2>
+                    <h3>Rs. 449</h3>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card150" onclick="card150()">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture8.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Baby O Multi-Purpose Balm</h2>
+                    <h4>Rs. 699</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card151" onclick="card151()">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture9.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Baby O Hair & Body Wash</h2>
+                    <h4>Rs. 499</h4>
+                </div>
+            </div>
+        </div>
+
+        <script>
+        function card145() {
+            window.location.href='kids1.html';
+        }
+        function card146() {
+            window.location.href='kids2.html';
+        }
+        function card147() {
+            window.location.href='kids3.html';
+        }
+        function card148() {
+            window.location.href='kids4.html';
+        }
+        function card149() {
+            window.location.href='kids5.html';
+        }
+        function card150() {
+            window.location.href='kids6.html';
+        }
+        function card151() {
+            window.location.href='kids7.html';
+        }
+        </script>
+        
+    </div>
+
+</section>
+
+</body>
+</html>

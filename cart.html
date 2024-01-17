@@ -1,0 +1,151 @@
+<!-- cart.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!-- Include your CSS file for styling -->
+    <style>body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+    }
+
+    header {
+        background-color: #343a40;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .cart-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #ddd;
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-details {
+        display: flex;
+        align-items: center;
+    }
+
+    .product-image {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        margin-right: 10px;
+    }
+
+    .product-info {
+        flex-grow: 1;
+    }
+
+    .remove-button {
+        background-color: #dc3545;
+        color: #fff;
+        border: none;
+        padding: 8px;
+        cursor: pointer;
+    }
+
+    .total-section {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+    }
+
+    footer{
+        background-color: #343a40;
+        color: #fff;
+        padding: 1em ;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        }
+
+    .place-order-button {
+        background-color: #6c1879;
+        color: white;
+        padding: 10px 20px;
+        font-size: 18px;
+        text-decoration: none;
+        margin-top: 20px;
+        border-radius: 10px;
+        margin-left: 87%;
+        }    
+
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Shopping Cart</h1>
+</header>
+<br><br><br><br><br><br>
+
+    <!-- Cart Container -->
+    <div id="cart-container">
+        <div id="cart-items"></div>
+    </div>
+
+
+    <!-- Total Amount and Place Order Button -->
+    <footer>
+    <div id="total-section">
+        <p><b>Total Amount: <span id="total-amount">0</span></b></p>
+    </div>
+        <button class="place-order-button" onclick="placeOrder()">Place Order</button>
+    
+</footer>
+
+    <!-- Include your JavaScript file -->
+    <script>
+        
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        const cartContainer = document.getElementById('cart-container');
+
+        cart.forEach(element => {
+            
+            const card = document.createElement('div');
+
+            card.classList.add('card');
+
+            card.innerHTML = `
+                <img src="${product.image}" alt="${product.name}">
+                <div>
+                    <h3>${product.name}</h3>
+                    <p>ID: ${product.id}</p>
+                    <p>Price: ${product.price}</p>
+                    <!-- You can add more details as needed -->
+                    <button onclick="removeFromCart('${product.id}')">Remove</button>
+                </div>
+            `;
+
+            cartContainer.appendChild(card);
+
+        });
+
+        function remove(productId) {
+
+            const updateCart = cart.filter(product => product.id !== productId);
+
+            localStorage.setItem('cart', JSON.stringify(updateCart));
+
+            location.reload();
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #393939;
+            background-image: url("Download1 (1).jpg");
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #312D2D;
+            position: fixed;
+            width: 100%;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            text-align: center;
+            padding: 20px;
+        }
+        /* Container for the cards */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start; /* Align cards to the left */
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Styling for each individual card */
+        .card {
+            width: 300px;
+            height: 400px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        /* Hover effect for cards */
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Styling for the content within the card */
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        /* Styling for the image within the card */
+        .card img {
+            width: 250px;
+            height: 120%; /* Adjusted height for the image */
+            object-fit: cover;
+            object-position: center;
+            border-bottom: 1px solid #0b0b0b; /* Added border between image and text */
+        }
+
+        /* Styling for the text within the card */
+        .card-text {
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        /* Optional: Add responsiveness */
+        @media (max-width: 600px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Fragrance: All</h1>
+    </header>
+
+
+   <section><br><br><br><br><br>
+
+    <!-- Container for the cards -->
+    <div class="card-container">
+        <!-- Card 1 with image at the top and text at the bottom -->
+        <div class="card" id="card77">
+            <div class="card-content">
+                <!-- Image at the top -->
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture1.png" alt="Card Background 1">
+                <!-- Text at the bottom -->
+                <div class="card-text">
+                    <h2>Exclusive Eau de Parfum</h2>
+                    <h4>Rs. 3,899</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="card78">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture4.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Exclusive Perfumed Body Cream</h2>
+                    <h4>Rs. 999</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card79">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture5.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>For him Anti-perspirant Roll-On Deodorant</h2>
+                    <h4>Rs. 279</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card80">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture6.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>For her Anti-perspirant Roll-On Deodorant</h2>
+                    <h4>Rs. 279</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card81">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture7.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Sensual Ruby Eau de Parfum</h2>
+                    <h4>Rs. 3,899</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card82">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture8.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Man Eau de Parfum</h2>
+                    <h4>Rs. 3,599</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card83">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture9.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Woman Eau de Parfum</h2>
+                    <h4>Rs. 3,499</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card84">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture10.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Mister Giordani Anti-perspirant Roll-On Deodorant</h2>
+                    <h4>Rs. 279</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card85">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture11.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Mister Giordani Eau de Toilette</h2>
+                    <h4>Rs. 3,099</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card86">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture12.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Femme Weekend Eau de Toilette</h2>
+                    <h4>Rs. 2,999</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card87">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture13.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>For him Eau de Parfum</h2>
+                    <h4>Rs. 3,099</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card88">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture4.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>For her Eau de Parfum</h2>
+                    <h4>Rs. 2,999</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card89">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture5.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Turquoise Eau de Toilette</h2>
+                    <h4>Rs. 1,499</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card90">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture6.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Nuit Eau de Parfum for her</h2>
+                    <h4>Rs. 3,899</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card91">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture7.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Nuit Eau de Parfum for him</h2>
+                    <h4>Rs. 3,999</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card92">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture8.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Caring Fragrance Mist with Organic Oat & Apricot</h2>
+                    <h4>Rs. 999</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card93">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture9.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Eau de Parfum</h2>
+                    <h4>Rs. 3,699</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card94">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture10.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Parfumed Roll-on Deodorant</h2>
+                    <h4>Rs. 279</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card95">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture11.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Energising Fragrance Mist with Organic Mint & Raspberry</h2>
+                    <h4>Rs. 999</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card96">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture12.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Refreshing Fragrance Mist with Organic Coconut Water & Melon</h2>
+                    <h4>Rs. 999</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card97">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture13.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Eau de Parfum</h2>
+                    <h4>Rs. 2,999</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card98">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture4.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Homme Eau de Toilette</h2>
+                    <h4>Rs. 3,099</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card99">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture5.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Perfumed Body Cream</h2>
+                    <h4>Rs. 999</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card100">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture6.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Femme Weekend Perfumed Body Cream</h2>
+                    <h4>Rs. 999</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card101">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture7.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Eau de Parfum</h2>
+                    <h4>Rs. 3,899</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card102">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture8.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Perfumed Roll-On Deodorant</h2>
+                    <h4>Rs. 279</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card103">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture9.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Anti-perspirant Roll-On Deodorant</h2>
+                    <h4>Rs. 279</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card104">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture10.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Essenza Perfumed Body Cream</h2>
+                    <h4>Rs. 999</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card105">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture11.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Oriflame Women's Collection Innocent White Lilac Perfumed Hand Cream</h2>
+                    <h4>Rs. 199</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card106">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture12.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Eau de Parfum</h2>
+                    <h4>Rs. 3,899</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card107">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture13.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Eau de Parfum</h2>
+                    <h4>Rs. 3,899</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card108">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture4.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Essenza Perfumed Body Spray</h2>
+                    <h4>Rs. 279</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card109">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture5.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Perfumed Body Spray</h2>
+                    <h4>Rs. 279</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card110">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture6.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Delicate Cherry Blossom Eau de Toilette</h2>
+                    <h4>Rs. 1,199</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card111">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture7.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Essenza Parfum</h2>
+                    <h4>Rs. 4,999</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card112">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture8.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Fire Eau de Toilette</h2>
+                    <h4>Rs. 2,299</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card113">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture9.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Dark Wood Eau de Toilette</h2>
+                    <h4>Rs. 1,299</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card114">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture10.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Perfumed Body Cream</h2>
+                    <h4>Rs. 999</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card115">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture11.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Perfumed Body Cream</h2>
+                    <h4>Rs. 999</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card116">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture12.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Eau de Toilette</h2>
+                    <h4>Rs. 2,299</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card117">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture13.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Amour Eau de Toilette</h2>
+                    <h4>Rs. 2,499</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card118">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture4.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Toujours Eau de Toilette</h2>
+                    <h4>Rs. 2,599</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card119">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture5.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Rose Eau de Toilette</h2>
+                    <h4>Rs. 1,499</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card120">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture6.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Jade Eau de Toilette</h2>
+                    <h4>Rs. 1,499</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card121">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture7.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Loved Up Feel Good Eau de Toilette</h2>
+                    <h4>Rs. 1,299</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card122">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture8.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Innocent White Lilac Eau de Toilette</h2>
+                    <h4>Rs. 1,199</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card123">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture9.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Citrus Tonic Eau de Toilette</h2>
+                    <h4>Rs. 1,299</h4>
+                </div>
+            </div>
+        </div>
+               
+    </div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #393939;
+            background-image: url("Download1 (1).jpg");
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #312D2D;
+            position: fixed;
+            width: 100%;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            text-align: center;
+            padding: 20px;
+        }
+        /* Container for the cards */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start; /* Align cards to the left */
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Styling for each individual card */
+        .card {
+            width: 300px;
+            height: 400px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        /* Hover effect for cards */
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Styling for the content within the card */
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        /* Styling for the image within the card */
+        .card img {
+            width: 250px;
+            height: 120%; /* Adjusted height for the image */
+            object-fit: cover;
+            object-position: center;
+            border-bottom: 1px solid #0b0b0b; /* Added border between image and text */
+        }
+
+        /* Styling for the text within the card */
+        .card-text {
+            margin-top: 10px;
+            font-size: 1rem;
+        }
+
+        /* Optional: Add responsiveness */
+        @media (max-width: 600px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Skin Care: Moisturisers</h1>
+    </header>
+
+
+   <section><br><br><br><br><br>
+
+    <!-- Container for the cards -->
+    <div class="card-container">
+        <!-- Card 1 with image at the top and text at the bottom -->
+        <div class="card" id="card354">
+            <div class="card-content">
+                <!-- Image at the top -->
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture1.png" alt="Card Background 1">
+                <!-- Text at the bottom -->
+                <div class="card-text">
+                    <h2>Cold Cream with Vitamin E, Canola Oil & Cocoa Butter</h2>
+                    <h4>Rs. 249</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card355">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture8.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Hydra Radiance Day Cream Rich</h2>
+                    <h4>Rs. 999</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card356">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture9.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Hydra Radiance Night Cream Rich</h2>
+                    <h4>Rs. 1,199</h4>
+                </div>
+            </div>
+        </div>
+       
+        <div class="card" id="card357">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture4.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Urban Guard 3D Day Cream SPF25</h2>
+                    <h4>Rs. 1,299</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card358">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture5.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Urban Guard 3D Night Cream</h2>
+                    <h4>Rs. 1,399</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card359">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture6.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Age Revive Night Cream</h2>
+                    <h4>Rs. 1,699</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card360">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture7.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Age Revive Day Cream SPF15</h2>
+                    <h4>Rs. 1,599</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card361">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture6.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Hydra Radiance Day Cream Light</h2>
+                    <h4>Rs. 999</h4>
+                </div>
+            </div>
+         </div>
+         <div class="card" id="card362">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture7.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Hydra Radiance Night Cream Light</h2>
+                    <h4>Rs. 1,099</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card363">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture12.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Mattifying & Cooling Face Lotion</h2>
+                    <h4>Rs. 659</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="card364">
+            <div class="card-content">
+                <img src="D:\Beauty@FingerTips\Skin Care\Moisture8.png" alt="Card Background 2">
+                <div class="card-text">
+                    <h2>Even Out Night Cream</h2>
+                    <h4>Rs. 1,499</h4>
+                </div>
+            </div>
+        </div>
+            <div class="card" id="card365">
+                <div class="card-content">
+                    <img src="D:\Beauty@FingerTips\Skin Care\Moisture12.png" alt="Card Background 2">
+                    <div class="card-text">
+                        <h2>Even Out Day Cream SPF 20</h2>
+                        <h4>Rs. 1,399</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card366">
+                <div class="card-content">
+                    <img src="D:\Beauty@FingerTips\Skin Care\Moisture7.png" alt="Card Background 2">
+                    <div class="card-text">
+                        <h2>Glow Essentials Face Cream with Vitamins E & B3</h2>
+                        <h4>Rs. 449</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card367">
+                <div class="card-content">
+                    <img src="D:\Beauty@FingerTips\Skin Care\Moisture8.png" alt="Card Background 2">
+                    <div class="card-text">
+                        <h2>Glow Essentials Face Cream with Vitamins E & B3 SPF 10</h2>
+                        <h4>Rs. 229</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card368">
+                <div class="card-content">
+                    <img src="D:\Beauty@FingerTips\Skin Care\Moisture11.png" alt="Card Background 2">
+                    <div class="card-text">
+                        <h2>Radiance Face Gel with Organic Apricot & Orange</h2>
+                        <h4>Rs. 429</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card369">
+                <div class="card-content">
+                    <img src="D:\Beauty@FingerTips\Skin Care\Moisture12.png" alt="Card Background 2">
+                    <div class="card-text">
+                        <h2>Mattifying Face Lotion with Organic Tea Tree & Lime</h2>
+                        <h4>Rs. 479</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card370">
+                <div class="card-content">
+                    <img src="D:\Beauty@FingerTips\Skin Care\Moisture6.png" alt="Card Background 2">
+                    <div class="card-text">
+                        <h2>Nourishing Face Cream with Organic Oat & Goji Berry</h2>
+                        <h4>Rs. 479</h4>
+                    </div>
+                </div>
+             </div>
+             <div class="card" id="card371">
+                <div class="card-content">
+                    <img src="D:\Beauty@FingerTips\Skin Care\Moisture8.png" alt="Card Background 2">
+                    <div class="card-text">
+                        <h2>Hydrating Face Cream with Organic Aloe Vera & Coconut Water</h2>
+                        <h4>Rs. 479</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card372">
+                <div class="card-content">
+                    <img src="D:\Beauty@FingerTips\Skin Care\Moisture12.png" alt="Card Background 2">
+                    <div class="card-text">
+                        <h2>Men Intense Anti-Ageing Face Gel Lotion</h2>
+                        <h4>Rs. 1,800</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card373">
+                <div class="card-content">
+                    <img src="D:\Beauty@FingerTips\Skin Care\Moisture8.png" alt="Card Background 2">
+                    <div class="card-text">
+                        <h2>Repairing Night Cream</h2>
+                        <h4>Rs. 1,999</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card374">
+                <div class="card-content">
+                    <img src="D:\Beauty@FingerTips\Skin Care\Moisture9.png" alt="Card Background 2">
+                    <div class="card-text">
+                        <h2>Firming Day Cream SPF 15</h2>
+                        <h4>Rs. 1,899</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card375">
+                <div class="card-content">
+                    <img src="D:\Beauty@FingerTips\Skin Care\Moisture10.png" alt="Card Background 2">
+                    <div class="card-text">
+                        <h2>Night Restorative Treatment</h2>
+                        <h4>Rs. 2,799</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card376">
+                <div class="card-content">
+                    <img src="D:\Beauty@FingerTips\Skin Care\Moisture11.png" alt="Card Background 2">
+                    <div class="card-text">
+                        <h2>Anti-Ageing Cream</h2>
+                        <h4>Rs. 3,199</h4>
+                    </div>
+                </div>
+            </div>
+
+        
+    </div>
+
+</section>
+
+</body>
+</html>

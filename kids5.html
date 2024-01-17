@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("Download1 (1).jpg");
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        #product-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        #image-slider {
+            margin-top: 20px;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #add-to-cart-btn {
+            background-color: rgb(0, 128, 105);
+            color: white;
+            padding: 10px;
+            border-radius: 50px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Product Content Page</h1>
+    </header>
+    <br><br><br><br><br>
+
+    <div id="product-content">
+
+        
+        <!-- Image Slider -->
+        <div id="image-slider" class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="D:\Beauty@FingerTips\Nutrition\Nutrition1.jpg" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="image2.jpg" alt="Image 2"></div>
+                <!-- Add more slides as needed -->
+            </div>
+            <!-- Add Pagination -->
+            
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+
+<div id="product-content">
+    <br><br><br><br><br><br>
+    <h2>Kids Hair & Body Wash Playful Strawberry</h2>
+    <h3>MRP Rs. 449.00</h3>
+    <button id="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+    <h5>ID: 8005</h5>
+    <p>Sweet , juicy scented hair and body wash for kids. With fruity organic strawberry extract, helps to protect skin, leaving hair and body gently cleansed and refreshed . Mild , soap-free,tear-free formula.dermatologically tested,biodegradable.Formulated without parabens or silicones.<br><br>
+        <uL><li><b>Gently cleanses and refreshes hair and body</b></li>
+        <li><b>pH balanced; mild formula developed for kids</b></li>
+        <li><b>Juicy and fresh strawberry scent-kids love!</b></li></uL></p>
+    <h3>Description</h3>
+    <p>Make bath time the cleanest, bubbliest, best part of their day!This energising, fruity scented hair and body wash helps your littlest loves smell yummy and fresh – and get squeaky clean all over! Infused with juicy organic strawberry extract- rich in antioxidant benefits- helping to gently protect and refresh kid’s delicate skin and hair. With a mild formula that is soap-free, tear-free, and pH balanced. Plus , it’s dermatologically tested and biodegradable . Formulated without parabens or silicones . So , let the foam – filled fun begin!</p>
+    <h4>How to Use</h4>
+    <p>Lather into a bubbly foam, cleanse hair and body, then rinse with water.</p>
+    <h4>Ingredients</h4>
+    <p>Juicy and sweet , strawberries are rich in antioxidants and well-known for their skin- protecting and revitalising properties . This fresh  , fruity hair and body wash for kids summons the playfulness of a summer day, infusing organic extracts that are bursting with the scent of sun-ripened strawberries. An uplifting  fragrance inspired by yummy berries- your kids are sure to love!<br>All Ingredients<br> AQUA, COCO-GLUCOSIDE, LAURYL GLUCOSIDE, SODIUM LAURETH SULATE, GLYCERYL OLEATE ,SODIUM COCOAMPHOACETATE, CITRIC ACID , PARFUM, POLYQUATERNIUM-67, PHENOXYETHANOL, SODIUM BENZOATE, GLYCERIN , SODIUM CITRATE, TOCOPHEROL, FRAGARIA VESCA FRUIT EXTRACT, HYDROGENATED VEGETABLE GLYCERIDES CITRATE, POTASSIUM SORBATE, CI 16035, CI 17200</p>
+    <h4>About Love Nature</h4>
+    <p>Love nature celebrates ingredients from nature that smell and fell fantastic. Every pleasurable product has been created to benefit your body and respect the planet.</p>
+</div>
+
+</body>
+</html>
+

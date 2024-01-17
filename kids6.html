@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("Download1 (1).jpg");
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        #product-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        #image-slider {
+            margin-top: 20px;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #add-to-cart-btn {
+            background-color: rgb(0, 128, 105);
+            color: white;
+            padding: 10px;
+            border-radius: 50px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Product Content Page</h1>
+    </header>
+    <br><br><br><br><br>
+
+    <div id="product-content">
+
+        
+        <!-- Image Slider -->
+        <div id="image-slider" class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="D:\Beauty@FingerTips\Nutrition\Nutrition1.jpg" alt="Image 1"></div>
+                <div class="swiper-slide"><img src="image2.jpg" alt="Image 2"></div>
+                <!-- Add more slides as needed -->
+            </div>
+            <!-- Add Pagination -->
+            
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+
+<div id="product-content">
+    <br><br><br><br><br><br>
+    <h2>Baby O  Multi-Purpose Balm</h2>
+    <h3>MRP Rs . 699.00</h3>
+    <button id="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+    <h5>ID: 8006</h5>
+    <p>Rich balm designed to soothe and deeply nourish babies’ sensitive skin. Helps moisturise and strengthen the skin barrier to provide soft skin and help prevent skin irritation.<br><br>
+        <uL><li><b>Allergy tested, dermatologically tested ,and paediatrician endorsed</b></li>
+        <li><b>Helps to form a barrier against dryness and gives a cool, soft and non- greasy feel</b></li>
+        <li><b>Suitable for baby and newborn skin care as well as all sensitive skin</b></li></uL></p>
+    <h3>Description</h3>
+    <p>Baby O’ Multi-purpose Balm is a rich, buttery balm designed to soothe and deeply nourish sensitive baby skin. Features golden Swedish Oat Oil, Lipid Lamellar Technology and Natural Moisturising Factor Technology that help lock in moisture and strengthen the skin barrier, to keep skin silky soft and protected. Self-preserving formula. Absorbs easily, allergy tested, dermatologically tested and paediatrician endorsed. Suitable for newborns and sensitive skin. 95% natural ingredients.<br>Baby’s skin feels deeply nourished – 100% agreed*<br>Baby’s delicate skin feels soft and supple – 97% agreed*<br>Helps to form a barrier against dryness<br>Delivers a cool, soft and non-greasy skin feel<br>Consumer tested (Parent’s assessment).</p>
+    <h4>How to Use</h4>
+    <p>Apply to clean, dry skin as required. Perfect for all-over care of the face and body, and can be used to soften and soothe areas of dry skin. Keep in diaper bag for quick relief on the go. Avoid the eye area.</p>
+    <h4>Ingredients</h4>
+    <p>SWEDISH OAT OIL<br>Based on our knowledge of baby skin, we wanted to find an ingredient that isn’t just hydrating, but actually improves your baby’s skin barrier and strengthens its resilience against external aggressors. Swedish Oat Oil is an ingredient that does just that.<br>Each drop of this beautiful golden oil has been sustainably extracted from the finest Swedish crops, creating a rich, concentrated ingredient that is exceptionally compatible with baby skin – far more so than other oat ingredients. It has a unique composition of lipids that actually mimic the skin’s own lipids and helps create a ‘second skin’ effect that strengthens your baby’s skin barrier, both on the surface and within the skin, to keep it soft and protected.<br><br><br>Full traceability<br>To ensure the quality, traceability and safety of the raw material is maintained, the husked oats (Avena sativa) are grown in Sweden, by selected growers using sustainable cropping programmes. Sweden is one of the foremost oat-producing countries in the world, with its spring grown oats renowned for their high grain quality. What’s more, farmers are part of an agricultural cooperative, built up through generations of owners. This cooperative contributes to farmers earning a fair profit and helps maintain the vitality of the local farming community.<br><br><br>LIPID LAMELLAR AND NATURAL MOISTURISING FACTOR (NMF) TECHNOLOGY<br>There’s a reason why we compare smooth, soft things to baby skin – it’s unbelievably silky and invites endless cuddles. The silkiness is created by the higher water content in baby skin. However, in contrast, babies have a thinner skin barrier and lower lipid and NMF content that makes it easier for moisture to escape, which can cause uncomfortable dryness. With this in mind, our experts have enhanced Baby O’ with Lipid Lamellar Technology and Natural Moisturising Factor (NMF) Technology – two innovative ingredients that help strengthen your baby’s skin barrier and improve moisture retention, which keeps your baby’s skin silky soft, comfortable and protected.<br><br><br>THE BABY O’ PRODUCT PHILOSOPHY: A ‘LESS IS MORE’ APPROACH<br>We’re as committed to your baby as you are and that’s why we don’t believe in exposing your precious bundle of joy to anything unnecessary. In addition to being 95% natural, Baby O’ is grounded in a ‘less is more’ philosophy. That means no fragrances, harsh ingredients or allergens, and minimal use of preservatives – where possible our products are ‘self-preserving’. Where it is not possible to self-preserve we have used nature-identical preservatives commonly used in food and drinks. All our Baby O’ formulations are formulated without parabens, phenoxyethanol and formaldehyde releasers. Every product is dermatologically and allergy tested and proven safe for sensitive skin.<br><br>All Ingredients<br>AQUA, GLYCERIN, OLEA EUROPAEA FRUIT OIL, BUTYROSPERMUM PARKII BUTTER, GLYCERYL STEARATE CITRATE, SODIUM ACRYLATES COPOLYMER, AVENA SATIVA KERNEL OIL, CERA ALBA, ETHYLHEXYLGLYCERIN, CETEARYL ALCOHOL, CETEARYL GLUCOSIDE, SORBITAN OLIVATE, HYDROXYACETOPHENONE, LECITHIN, 1,2-HEXANEDIOL, CAPRYLYL GLYCOL, TOCOPHERYL ACETATE</p>
+    <h4>About</h4>
+    <p>Meet our 95% natural baby care range! It’s a range of gentle and effective baby products such as baby oil for the body, a combined baby shampoo & body wash, diaper cream for nappy rash, a multi-purpose balm and a cleansing milk for the diaper area. All of our baby products are designed to gently nourish and protect babies’ sensitive skin with Swedish Oat Oil, and they’re all paediatrician endorsed!</p>
+</div>
+
+</body>
+</html>
